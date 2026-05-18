@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chebyshev Inequality Visualization</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Chebyshev Inequality</h1>
+
+        <p>
+            Visualizing probabilistic concentration using variance bounds.
+        </p>
+
+    </header>
+
+    <div id="canvas-container"></div>
+
+    <div class="controls">
+
+        <div class="control-group">
+
+            <label>
+                Distribution
+            </label>
+
+            <select id="distribution-select">
+
+                <option value="normal">
+                    Normal
+                </option>
+
+                <option value="uniform">
+                    Uniform
+                </option>
+
+                <option value="exponential">
+                    Exponential
+                </option>
+
+                <option value="outliers">
+                    Heavy Outliers
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="control-group">
+
+            <label>
+                k (standard deviations)
+            </label>
+
+            <div id="k-slider"></div>
+
+        </div>
+
+        <div class="control-group">
+
+            <label>
+                Samples / Frame
+            </label>
+
+            <div id="speed-slider"></div>
+
+        </div>
+
+    </div>
+
+    <script src="sketch.js"></script>
+
+</body>
+
+</html>
