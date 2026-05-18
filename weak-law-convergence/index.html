@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weak Law of Large Numbers</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Weak Law of Large Numbers</h1>
+
+        <p>
+            Visualization of probability concentration around the expected value.
+        </p>
+
+    </header>
+
+    <div id="canvas-container"></div>
+
+    <div class="controls">
+
+        <div class="control-group">
+
+            <label>
+                Samples / Frame
+            </label>
+
+            <div id="speed-slider"></div>
+
+        </div>
+
+        <div class="control-group">
+
+            <label>
+                Epsilon (ε)
+            </label>
+
+            <div id="epsilon-slider"></div>
+
+        </div>
+
+    </div>
+
+    <script src="sketch.js"></script>
+
+</body>
+
+</html>
