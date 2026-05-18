@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:
+        radial-gradient(circle at top, #101826, #05070d);
+
+    color: white;
+
+    font-family: 'JetBrains Mono', monospace;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-x: hidden;
+}
+
+header {
+    margin-top: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+
+    color: #7ee7ff;
+
+    text-shadow:
+        0 0 10px rgba(126, 231, 255, 0.6),
+        0 0 30px rgba(126, 231, 255, 0.3);
+}
+
+.subtitle {
+    color: #9aa4b2;
+    font-size: 15px;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.canvas-container {
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    border-radius: 24px;
+
+    background:
+        rgba(255, 255, 255, 0.03);
+
+    backdrop-filter: blur(10px);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 0 40px rgba(0, 0, 0, 0.5);
+
+}
+
+canvas {
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 25px rgba(0, 0, 0, 0.5);
+
+}
+
+.controls {
+
+    margin-top: 20px;
+
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.03);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.05);
+
+    border-radius: 18px;
+}
+
+label {
+    color: #7ee7ff;
+    font-size: 15px;
+}
+
+input[type="range"] {
+
+    width: 300px;
+
+    accent-color: #00d9ff;
+}
+
+.footer {
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+    text-align: center;
+}
+
+.formula {
+
+    margin-top: 10px;
+
+    color: #00ffb3;
+
+    font-size: 18px;
+}
